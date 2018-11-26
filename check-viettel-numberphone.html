@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>[Bài tập] Sử dụng thuật toán tìm kiếm</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    var sdt = ["0912286544", "0978117290", "0966780299", "0354228222", "0914181111"];
+    var str = sdt.join("\n");
+    console.log(str);
+
+    function isViettelTelephone(str) {
+        var viettel = /^0(9[6-8]\d{7}|3[2-9]\d{7})$/gm;
+        var testSdt = str.match(viettel);
+        var viettelTelephone = testSdt.join();
+        document.write("Các số điện thoại của Viettel là: " +viettelTelephone);
+    }
+
+    isViettelTelephone(str);
+
+</script>
+</body>
+</html>
